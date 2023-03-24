@@ -192,6 +192,13 @@ public class CircularDoublyLinkedListTest {
     public void testRemove3() throws Exception {
         // TODO complete the Unit testing of
         // logic correctness of the remove() method
+        CircularDoublyLinkedList<Integer> circle = new CircularDoublyLinkedList<Integer>();
+        circle.addFirst(10);
+        circle.addAfter(10, 11);
+        circle.addAfter(11, 12);
+        circle.removeLast();
+        circle.removeFirst();
+        assertEquals(11, circle.current().intValue());
 
     }
 
